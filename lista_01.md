@@ -290,6 +290,21 @@ class Funcionario {
   }
 }
   ```javaScript 
+  // Definição da classe Funcionario
+class Funcionario {
+    // Construtor da classe Funcionario
+    constructor(nome, idade, salarioBase) { // lista de atributos que tem q fazer
+      this.nome = nome; // Atributo com nome de funcionário
+      this.idade = idade; // atributo de idade de funcionário 
+      this.salarioBase = salarioBase; // atributo de salário base do funcionário
+    }
+  
+    // Método para calcular o salário do funcionário dentro da classe funcionário
+  calcularSalario() {
+    console.log("O salário do funcionário " + this.nome + " é R$ " + this.salarioBase.toFixed(2) + ".");
+  }
+}
+  
   // Definição da classe Professor, que herda de Funcionario
   class Professor extends Funcionario {
     // Construtor da classe Professor
@@ -314,4 +329,4 @@ class Funcionario {
   // Chamando o método calcularSalario() para cada professor e mostrando o salário calculado no console
   professor1.calcularSalario();
   professor2.calcularSalario();
-  ```
+  
